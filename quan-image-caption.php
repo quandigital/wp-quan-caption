@@ -19,10 +19,10 @@
         }
 
         if (isset($atts['caption'])) {
-            return '<div class="image ' . $width . '">' . $content . '<div class="caption">' . $atts['caption'] . '</div></div>';
+            return '<div class="content-image ' . $width . '">' . $content . '<div class="caption">' . $atts['caption'] . '</div></div>';
         }
 
-        return '<div class="image ' . $width . '">' . $content . '</div>';
+        return '<div class="content-image ' . $width . '">' . $content . '</div>';
     }
 
     add_shortcode( 'caption', 'quanImageCaption' );
