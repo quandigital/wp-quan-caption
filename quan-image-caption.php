@@ -8,7 +8,7 @@
      *   License: WTFPL
      */
     
-    defined( 'ABSPATH' ) or die( 'Die! Die!' );
+    defined( 'ABSPATH' ) or die();
 
     function quanImageCaption($atts, $content = null)
     {
@@ -18,11 +18,14 @@
             $width = 'full';
         }
 
-        if (isset($atts['caption'])) {
-            return '<div class="content-image ' . $width . '">' . $content . '<div class="caption">' . $atts['caption'] . '</div></div>';
-        }
+        if (isset($atts['src'])) {
+            if (!is_null($content)) {
+                return '<div class="content-image ' . $width . '"><img src="' . $atts['src'] . '" /><div class="caption">' . $content . '</div></div>';
+            }
+            return '<div class="content-image ' . $width . '"><img src="' . $atts['src'] . '" /></div>';
+        } 
 
-        return '<div class="content-image ' . $width . '">' . $content . '</div>';
+        return;
     }
 
     add_shortcode( 'caption', 'quanImageCaption' );
