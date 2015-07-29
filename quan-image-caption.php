@@ -4,8 +4,8 @@
      *   Plugin Name: Quan Image Caption
      *   Plugin URI: http://www.quandigital.com/
      *   Description: Adds a nicer image/caption shortode
-     *   Version: 1
-     *   License: WTFPL
+     *   Version: 1.0.0
+     *   License: MIT
      */
     
     defined( 'ABSPATH' ) or die();
