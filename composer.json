@@ -1,6 +1,6 @@
 {
     "name": "quandigital/caption",
-    "description": "WordPress plugin to override the default `[caption]` shortcode",
+    "description": "WordPress plugin to override the default [caption] shortcode",
     "license": "MIT",
     "type": "wordpress-plugin",
     "require": {
